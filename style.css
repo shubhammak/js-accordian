@@ -1,0 +1,59 @@
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 25px;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+.container h1{
+    text-align: center;
+}
+.accordian-container .accordian-title:first-child{
+    margin-top: 0px;
+}
+
+.accordian-container .accordian-title{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #c2c2c2;
+    display: block;
+    border-radius: 3px;
+    margin-top: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+.accordian-container .accordian-title.open{
+   border-radius: 3px 3px 0px 0px; 
+}
+
+.accordian-container .accordian-title::after{
+    content: "\002B";
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    font-size: 29px;
+    font-weight: normal;
+}
+.accordian-container .accordian-title.open::after{
+    content: "\002D";
+    position:absolute;
+    right: 10px;
+    top: 0px;
+    font-size: 29px;
+    font-weight: normal;
+}
+
+.accordian-container .accordian-content{
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #c2c2c2;
+    border-top: 0px;
+    display: none;
+    border-radius: 0px 0px 3px 3px; 
+}
+
+.accordian-container .accordian-content.open{
+    display: block;
+}
